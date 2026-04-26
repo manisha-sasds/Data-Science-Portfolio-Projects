@@ -93,14 +93,11 @@ For example:
 cd C:/Users/YourName/Documents/shopping-dashboard
 
 **Step 3 — Run the dashboard**
-streamlit run shopping_dashboard.py
-
+streamlit run customer_app.py
 
 **Step 4 — Your browser opens automatically at:**
-http://localhost:8501
-
-Note: 💡 The dashboard stays live as long as your terminal is open.  
-       Press `Ctrl + C` in the terminal to stop it.
+Local URL: http://localhost:8501
+Network URL: http://192.168.1.156:8501
 
 ## 🔧 Sidebar Filters
 
