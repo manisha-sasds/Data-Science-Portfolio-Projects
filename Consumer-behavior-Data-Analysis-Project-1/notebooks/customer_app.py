@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 
 st.set_page_config(
     page_title="Shopping Behaviour Dashboard",
@@ -35,8 +36,13 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("../data/02_processed/customer_data_cleaned.csv")
 
+# This gets the folder where customer_app.py lives
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Then builds the correct path to your CSV from there
+    DATA_PATH = os.path.join(BASE_DIR, "..", "data", "02_processed", "customer_data_cleaned.csv")
+    df = pd.read_csv(DATA_PATH)
     # Normalise column names to lowercase_with_underscores
     df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
 
