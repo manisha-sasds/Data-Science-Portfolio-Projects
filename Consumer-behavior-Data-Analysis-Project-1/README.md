@@ -95,9 +95,11 @@ cd C:/Users/YourName/Documents/shopping-dashboard
 **Step 3 — Run the dashboard**
 streamlit run customer_app.py
 
-**Step 4 — Your browser opens automatically at:**
-Local URL: http://localhost:8501
-Network URL: http://192.168.1.156:8501
+**Step 4 — : Customer Shopping Behaviour Dashboard**
+🚀 **Live Dashboard:** [Click here to view](https://data-science-portfolio-projects-dsuttfk6h665ugk5mxfgry.streamlit.app/)
+
+Built with Python, Streamlit and Plotly, Steamlit Cloud.
+
 
 ## 🔧 Sidebar Filters
 
